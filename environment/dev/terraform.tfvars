@@ -17,4 +17,28 @@ vn_map = {
 }
 
 
+sbn_map = {
+  bastionsbnet = {
+    name                 = "AzureBastionSubnet"
+    resource_group_name  = "rg-web"
+    virtual_network_name = "vnet-web"
+    address_prefixes     = ["10.77.0.0/24"]
+  }
+
+  web1sbnet = {
+    name                 = "snet-web01"
+    resource_group_name  = "rg-web"
+    virtual_network_name = "vnet-web"
+    address_prefixes     = ["10.77.1.0/24"]
+  }
+
+  web2sbnet = {
+    name                 = "snet-web02"
+    resource_group_name  = "rg-web"
+    virtual_network_name = "vnet-web"
+    address_prefixes     = ["10.77.2.0/24"]
+  }
+}
+
+
 
