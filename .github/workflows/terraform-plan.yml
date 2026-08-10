@@ -1,9 +1,16 @@
+# Workflow: Terraform Plan
+# Triggers when code is pushed to feature branches or when a Pull Request is raised targeting main.
+# Approvers review the terraform plan output in PR status checks before approving the PR.
+
 name: Terraform Plan
 
 on:
   push:
     branches:
       - "feature/**"
+  pull_request:
+    branches:
+      - main
 
 permissions:
   contents: read
