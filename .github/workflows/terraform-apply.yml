@@ -1,3 +1,6 @@
+# Workflow: Terraform Apply
+# Triggers ONLY when code is merged into the main branch (after PR review & approval).
+
 name: Terraform Apply
 
 on:

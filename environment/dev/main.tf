@@ -12,9 +12,9 @@ module "virtual_network" {
 
 
 module "subnet" {
-  depends_on = [ module.virtual_network ]
-  source = "../../modules/03_azurerm_subnet"
-  sbn = var.sbn_map
+  depends_on = [module.virtual_network]
+  source     = "../../modules/03_azurerm_subnet"
+  sbn        = var.sbn_map
 
 }
 
